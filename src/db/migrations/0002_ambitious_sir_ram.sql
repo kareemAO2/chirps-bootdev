@@ -1,0 +1,1 @@
+ALTER TABLE "chirps" ADD COLUMN "hashed_password" varchar DEFAULT 'unset' NOT NULL;
