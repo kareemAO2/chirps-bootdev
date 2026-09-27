@@ -4,8 +4,8 @@ import {
   checkUserByEmail,
   makeJWT,
   makeRefreshToken,
-} from "../db/queries/auth.js";
-import { UserResponse } from "../db/schema.js";
+} from "../../db/queries/auth.js";
+import { UserResponse } from "../../db/schema.js";
 export async function handlerLogin(
   req: Request,
   res: Response,

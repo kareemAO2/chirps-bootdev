@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express";
-import { createChirp } from "../db/queries/chirps.js";
-import { BadRequestError } from "./BadRequestError.js";
-import { getBearerToken, validateJWT } from "../db/queries/auth.js";
+import { createChirp } from "../../db/queries/chirps.js";
+import { BadRequestError } from "../BadRequestError.js";
+import { getBearerToken, validateJWT } from "../../db/queries/auth.js";
 export async function handlerCreateChirp(
   req: Request,
   res: Response,

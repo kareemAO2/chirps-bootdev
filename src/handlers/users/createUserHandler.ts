@@ -1,9 +1,13 @@
 import { NextFunction, Request, Response } from "express";
-import { BadRequestError } from "./BadRequestError.js";
+import { BadRequestError } from "../BadRequestError.js";
 import { randomUUID } from "node:crypto";
-import { createUser } from "../db/queries/users.js";
-import { NewUser, UserResponse } from "../db/schema.js";
-import { hashPassword, makeJWT, makeRefreshToken } from "../db/queries/auth.js";
+import { createUser } from "../../db/queries/users.js";
+import { NewUser, UserResponse } from "../../db/schema.js";
+import {
+  hashPassword,
+  makeJWT,
+  makeRefreshToken,
+} from "../../db/queries/auth.js";
 export async function createUserHandler(
   req: Request,
   res: Response,

@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
-import { getAuthorChirps, getChirps } from "../db/queries/chirps.js";
-import { BadRequestError } from "./BadRequestError.js";
+import { getAuthorChirps, getChirps } from "../../db/queries/chirps.js";
+import { BadRequestError } from "../BadRequestError.js";
 export async function handlerGetChirps(
   req: Request,
   res: Response,

@@ -1,6 +1,5 @@
 import { db } from "../index.js";
 import { chirps, NewUser, users } from "../schema.js";
-import { hashPassword } from "./auth.js";
 import { and, eq } from "drizzle-orm";
 
 export async function createUser(user: NewUser) {

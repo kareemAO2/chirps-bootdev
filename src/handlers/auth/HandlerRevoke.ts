@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { getBearerToken, revokeRefreshToken } from "../db/queries/auth.js";
+import { getBearerToken, revokeRefreshToken } from "../../db/queries/auth.js";
 
 export async function handlerRevoke(req: Request, res: Response) {
   try {

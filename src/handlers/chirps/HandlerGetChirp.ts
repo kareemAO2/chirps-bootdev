@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 
-import { getChirp } from "../db/queries/chirps.js";
+import { getChirp } from "../../db/queries/chirps.js";
 export async function handlerGetChirp(
   req: Request,
   res: Response,

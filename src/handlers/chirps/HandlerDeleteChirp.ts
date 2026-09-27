@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
-import { getBearerToken, validateJWT } from "../db/queries/auth.js";
-import { deleteChirp } from "../db/queries/chirps.js";
-import { validateRole } from "../db/queries/users.js";
+import { getBearerToken, validateJWT } from "../../db/queries/auth.js";
+import { deleteChirp } from "../../db/queries/chirps.js";
+import { validateRole } from "../../db/queries/users.js";
 
 export async function handlerDeleteChirp(req: Request, res: Response) {
   const token = getBearerToken(req);

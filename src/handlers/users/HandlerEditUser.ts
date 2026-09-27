@@ -3,8 +3,8 @@ import {
   getBearerToken,
   hashPassword,
   validateJWT,
-} from "../db/queries/auth.js";
-import { editUser } from "../db/queries/users.js";
+} from "../../db/queries/auth.js";
+import { editUser } from "../../db/queries/users.js";
 
 export async function handlerEditUser(req: Request, res: Response) {
   const token = getBearerToken(req);

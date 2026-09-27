@@ -4,7 +4,7 @@ import {
   getUserFromRefreshToken,
   makeJWT,
   validateRefreshToken,
-} from "../db/queries/auth.js";
+} from "../../db/queries/auth.js";
 
 export async function handlerRefresh(req: Request, res: Response) {
   try {
